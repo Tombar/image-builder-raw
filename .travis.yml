@@ -22,4 +22,4 @@ deploy:
     - "odroid-raw-k8s.img.zip.sha256"
   on:
     tags: true
-    repo: tombar/image-builder-raw-k8s
+    repo: Tombar/image-builder-raw-k8s
