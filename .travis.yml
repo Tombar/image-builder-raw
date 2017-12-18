@@ -14,12 +14,12 @@ deploy:
   provider: releases
   skip_cleanup: true
   api_key:
-    secure: r+RxXEasgwVp68gvD//Lm4aouLS+uz0ArTZfLhPfbHWgYlKbPgUna/3KraMcIKGYV3Q0OyCXP7UWcEQYb2boFtYvGo5UHMPSyyQChM2FfhcMl6V9ugVZpsEMx0s+TYL9se8JJaUrDECoBYbudhcDzmATqVcqkzW+us6bvh9x/nX8o+gOgb+Sk+av++3ZwNNqQx44ML3hQY7jPQfaDRPkmme3vnZs9RQlTijqobFKkC/Ebo+WJBmQU/bIUhgHanpXqCR2hmJySCNzZ/wB2NgHVpUAsSFZmebIY2z13xMfS0hKgBdhJ5jfRIAHoWMC40Fiyrq/PcfOnZ13lXVKvqC94YG+NIhzbiEsthEFmcvvjTYnpr3f/vykWh2YpFiCuGhc9nDePYhylu4k+zwVmC2sr78sjupjTFJ/rFfUamZfDJ7Po/0av+2MPnLkFOiX7rcRmDcxT8prpBTxuti+ByotRefY0bqn0L9dJVsBjNZVN5+Ce/Cpd5U9ZQrgthf5WAm0TerCvesmvY4r6Hu4hFg+n3VhVvAlrdUwR1SjrqMavSSDi36O1gO8QfWwSmydAgn/tSbb7UbNBvX3yNt1s73NNn6Qd72WHQpB5zE8ZF7G7swpLESD+2HjWPLefEGZHQNh8NAVrLpD2HDkmvtRcPOB5oz/UfkRyTuduP1KIcY4sp4=
+    secure: yTibEbfHljEK52KfRXJBXIG3g9zuA87YZTD9rBb23sVENqySIccWdo7oI7bKY7BBS8t2Xu8pEJlp0MkD/DmsF3Bv04zMzx9hfAl0uUDSpAlucb4feI1qy0Sr8B+Td1e7tUC0QvAvJzt3fqhfAot3tao1Q1aBg0zpo8kn7WOG0HA09d2C9n+jLNeRGaU1/P4hJB9ToRD/zr9/9ox/LoOPj14EzMidzUqLgDIEwPaHfNZPBCO0oEwM1h4KDfopkIok02fCpGli/eITUVZT21RGvlLPmiKhJ+Vhrp07bkeQ0OCV7KF9Wt4NBrF1xGvvN/ha9B6MPpH9+jzUZrlbAT1yVFFax2z/ef18iyyBUI5WtSREwSKL8ITfb0yaSBgweXuSRuQWyVw0vSpiBCsN0o1mSPHSQeiQgbKvXa2Mxh7IRCKk+nIWqfZ9f2/kayHBy1QVIQNJLouSyU4f41ali2xkniG2m91xAZUPnQ5K1kWgU0h30VUvBsy5l9HWVpd21QB9WKHRkdi0UsekXqplbLO2OWC1lKBYu5bZtchcQ9Kz5+s5cMdetwss8B5dWJ69RGWUPRqtR53HuvQIM6sjAjZwToD+YevMw82eXVTi1XZPmSQhw7Ah0Xl6igrMNzetHs4A6Zf02XSv9jgohECcgTib2BbXx0ifSplNAmeFVY7Qgo8=
   file:
-    - "rpi-raw.img.zip"
-    - "rpi-raw.img.zip.sha256"
-    - "odroid-raw.img.zip"
-    - "odroid-raw.img.zip.sha256"
+    - "rpi-raw-k8s.img.zip"
+    - "rpi-raw-k8s.img.zip.sha256"
+    - "odroid-raw-k8s.img.zip"
+    - "odroid-raw-k8s.img.zip.sha256"
   on:
     tags: true
-    repo: hypriot/image-builder-raw
+    repo: tombar/image-builder-raw-k8s
