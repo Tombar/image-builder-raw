@@ -2,7 +2,7 @@ require 'serverspec'
 set :backend, :exec
 
 describe "Raw Image" do
-  let(:image_path) { return '/rpi-raw.img' }
+  let(:image_path) { return '/rpi-raw-k8s.img' }
 
   it "exists" do
     image_file = file(image_path)
@@ -10,7 +10,7 @@ describe "Raw Image" do
   end
 
   context "Partition table" do
-    let(:stdout) { command("fdisk -l #{image_path} | grep '^/rpi-raw'").stdout }
+    let(:stdout) { command("fdisk -l #{image_path} | grep '^/rpi-raw-k8s'").stdout }
 
     it "has 2 partitions" do
       partitions = stdout.split(/\r?\n/)
