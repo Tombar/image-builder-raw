@@ -8,7 +8,7 @@ fi
 
 ### setting up some important variables to control the build process
 BUILD_RESULT_PATH="/workspace"
-IMAGE_PATH="odroid-raw.img"
+IMAGE_PATH="odroid-raw-k8s.img"
 SD_CARD_SIZE=1300
 BOOT_PARTITION_SIZE=64
 

@@ -8,7 +8,7 @@ fi
 
 ### setting up some important variables to control the build process
 BUILD_RESULT_PATH="/workspace"
-IMAGE_PATH="rpi-raw.img"
+IMAGE_PATH="rpi-raw-k8s.img"
 SD_CARD_SIZE=2000
 BOOT_PARTITION_SIZE=64
 
